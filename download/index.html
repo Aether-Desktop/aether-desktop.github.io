@@ -1,0 +1,18 @@
+<!DOCTYPE html><link rel="stylesheet" href="/_astro/about.C1n39lgG.css"><h1 id="download">Download</h1>
+<p>AETHER is distributed via its GitHub releases. Download the pre‑built installer binary or build from source.</p>
+<h2 id="release-binary">Release Binary</h2>
+<p>Download <code>aether-installer-&#x3C;version>-x86_64-linux</code> from the <a href="https://github.com/aether-desktop/AETHER/releases">Releases</a> page, verify with <code>SHA256SUMS</code> and run it:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#B392F0">sha256sum</span><span style="color:#79B8FF"> -c</span><span style="color:#9ECBFF"> SHA256SUMS</span><span style="color:#79B8FF"> --ignore-missing</span></span>
+<span class="line"><span style="color:#B392F0">chmod</span><span style="color:#9ECBFF"> +x</span><span style="color:#9ECBFF"> aether-installer-</span><span style="color:#F97583">&#x3C;</span><span style="color:#9ECBFF">versio</span><span style="color:#E1E4E8">n</span><span style="color:#F97583">></span><span style="color:#9ECBFF">-x86_64-linux</span></span>
+<span class="line"><span style="color:#B392F0">./aether-installer-</span><span style="color:#E1E4E8">&#x3C;version>-x86_64-linux</span></span>
+<span class="line"></span></code></pre>
+<h2 id="building-from-source">Building from Source</h2>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#B392F0">git</span><span style="color:#9ECBFF"> clone</span><span style="color:#9ECBFF"> https://github.com/aether-desktop/AETHER.git</span></span>
+<span class="line"><span style="color:#79B8FF">cd</span><span style="color:#9ECBFF"> AETHER</span></span>
+<span class="line"><span style="color:#B392F0">make</span><span style="color:#9ECBFF"> build-installer</span><span style="color:#6A737D">    # cargo build --release --manifest-path installer/Cargo.toml</span></span>
+<span class="line"><span style="color:#B392F0">make</span><span style="color:#9ECBFF"> install-user</span><span style="color:#6A737D">       # copies to ~/.local, never requires root</span></span>
+<span class="line"></span></code></pre>
+<p>Alternatively, use the bootstrap script:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#79B8FF">cd</span><span style="color:#9ECBFF"> AETHER</span></span>
+<span class="line"><span style="color:#B392F0">./install.sh</span></span>
+<span class="line"></span></code></pre>
